@@ -9,24 +9,7 @@
 #include <iostream>
 #include <cmath>
 
-void printRand();
-double celciusToFarenheit(double);
-
-int main(int argc, const char * argv[]) {
-    using namespace std;
-    
-    cout << "Hello, World!" << endl;
-    
-    // Single line comment
-    /* Multi-line
-     comment */
-    
-    numberOfCarrots();
-    printRand();
-    convertCelsiusToFarenheit();
-    
-    return 0;
-}
+using namespace std;
 
 void numberOfCarrots() {
     int carrots;
@@ -48,6 +31,7 @@ void printRand() {
 
 void convertCelsiusToFarenheit() {
     double celcius;
+    
     cout << "섭씨 온도를 입력하세요: ";
     cin >> celcius;
     cout << "화씨론: " << farenheitFrom(celcius) << endl;
@@ -55,4 +39,18 @@ void convertCelsiusToFarenheit() {
 
 double farenheitFrom(double celcius) {
     return celcius * 1.8 + 32.0;
+}
+
+int main(int argc, const char * argv[]) {
+    cout << "Hello, World!" << endl;
+    
+    // Single line comment
+    /* Multi-line
+     comment */
+    
+    numberOfCarrots();
+    printRand();
+    convertCelsiusToFarenheit();
+    
+    return 0;
 }
