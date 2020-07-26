@@ -6,8 +6,9 @@ int Variable = 3;
 int __variable = 3;
 int var_iable = 3;
 int variable1 = 3;
-// 1Variable = 3; -> Error, do not start with number
-// var-iable = 3; -> Error, no hyphens
+
+1Variable = 3; -> Error, do not start with number
+var-iable = 3; -> Error, no hyphens
 ```
 
 ## Initializaing variables
@@ -47,8 +48,9 @@ bool falseValue0 = 0; // false
 ## Const
 ```cpp
 const int constValue = 0; // Won't be changed
-// const int uninitializedValue; // Invalid - should be initialized
 const bool CONVENTION = 0;
+
+const int uninitializedValue; -> Invalid - should be initialized
 ```
 
 ## Floating Point Types
@@ -86,8 +88,9 @@ int valueLostCasting = doubleValue; // Floating point -> Integer : floating poin
 > C++ only allows list initialization with const
 
 ```cpp
-// char narrowingInit = { 99999999 }; //Invalid : Constant expression evaluates to 99999999 which cannot be narrowed to type 'char'
-// char invalidInit = { intValue1 }; // Invalid : Non-constant-expression cannot be narrowed from type 'int' to 'char' in initializer list
+char narrowingInit = { 99999999 }; -> Invalid : Constant expression evaluates to 99999999 which cannot be narrowed to type 'char'
+char invalidInit = { intValue1 }; -> Invalid : Non-constant-expression cannot be narrowed from type 'int' to 'char' in initializer list
+
 const int value = 0;
 char validInit = { value };
 ```
