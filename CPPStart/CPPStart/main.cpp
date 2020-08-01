@@ -29,16 +29,16 @@ void printRand() {
     return;
 }
 
+double farenheitFrom(double celcius) {
+    return celcius * 1.8 + 32.0;
+}
+
 void convertCelsiusToFarenheit() {
     double celcius;
     
     cout << "섭씨 온도를 입력하세요: ";
     cin >> celcius;
     cout << "화씨론: " << farenheitFrom(celcius) << endl;
-}
-
-double farenheitFrom(double celcius) {
-    return celcius * 1.8 + 32.0;
 }
 
 int main(int argc, const char * argv[]) {
