@@ -9,35 +9,18 @@
 #include <iostream>
 #include <cmath>
 
-void printRand();
-double celciusToFarenheit(double);
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    using namespace std;
-    
-    cout << "Hello, World!" << endl;
-    
-    // Single line comment
-    /* Multi-line
-     comment */
-    
+void numberOfCarrots() {
     int carrots;
+    double x;
     
     cout << "당근 몇개가 있나요?" << endl;
     cin >> carrots;
     cout << "당근 " << carrots << "개를 흔들어 주세요!" << endl;
     
-    double x = pow(carrots, 2);
+    x = pow(carrots, 2);
     cout << "제곱은 " << x << "개" << endl;
-    
-    printRand();
-    
-    cout << "섭씨 온도를 입력하세요: ";
-    double celcius;
-    cin >> celcius;
-    cout << "화씨론: " << celciusToFarenheit(celcius) << endl;
-    
-    return 0;
 }
 
 void printRand() {
@@ -46,6 +29,28 @@ void printRand() {
     return;
 }
 
-double celciusToFarenheit(double celcius) {
+double farenheitFrom(double celcius) {
     return celcius * 1.8 + 32.0;
+}
+
+void convertCelsiusToFarenheit() {
+    double celcius;
+    
+    cout << "섭씨 온도를 입력하세요: ";
+    cin >> celcius;
+    cout << "화씨론: " << farenheitFrom(celcius) << endl;
+}
+
+int main(int argc, const char * argv[]) {
+    cout << "Hello, World!" << endl;
+    
+    // Single line comment
+    /* Multi-line
+     comment */
+    
+    numberOfCarrots();
+    printRand();
+    convertCelsiusToFarenheit();
+    
+    return 0;
 }
