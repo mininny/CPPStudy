@@ -169,3 +169,21 @@ delete [] p_arr;
 int arr[10];
 *(arr + 3) = 3; // Puts 3 into the third element of the array.
 ```
+
+Using structs with pointer:
+```c++
+struct things { 
+    int good;
+    int bad;
+} thing = { 1, 2 };
+things* another_thing = &thing;
+
+another_thing->good == thing.good; // Access to member variables from pointeer uses ->
+another_thing->bad == thing.bad; // While static structs use .
+(*another_thing).good; // (*another_thing) is the struct, so we can use .
+```
+
+## Memory locations
+- automatic storage: variables declared within a scope like a function. Only valid within that scope. `LIFO`
+- static storage: storage that persists throughout the lifetime of the program. Usually declared as a `static`.
+- dynamic storage/heap: dynamic allocations to the memory pool using `new` and `delete`.
