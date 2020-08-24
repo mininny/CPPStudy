@@ -183,7 +183,3 @@ another_thing->bad == thing.bad; // While static structs use .
 (*another_thing).good; // (*another_thing) is the struct, so we can use .
 ```
 
-## Memory locations
-- automatic storage: variables declared within a scope like a function. Only valid within that scope. `LIFO`
-- static storage: storage that persists throughout the lifetime of the program. Usually declared as a `static`.
-- dynamic storage/heap: dynamic allocations to the memory pool using `new` and `delete`.
