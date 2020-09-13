@@ -8,4 +8,5 @@ Mininny's journey through studying C++
 * [Expressions](Expressions.md)
 * [Loop](Loop.md)
 * [Conditionals](Conditionals.md)
+* [Functions](Functions.md)
 * [Others](Other.md)
