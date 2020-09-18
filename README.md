@@ -1,6 +1,6 @@
 # C++ Study
 
-Mininny's journey through studying C++
+Mininny's journey through C++
 
 * [C++ Start](CPPStart)
 * [Primitives](Primitives.md)
