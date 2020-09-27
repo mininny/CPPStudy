@@ -67,5 +67,5 @@ class Bakery
 {
 private:
     static const int Months = 12;
-..l.
+...
 ```
