@@ -46,3 +46,26 @@ while (inFile.good())
 inFile.close();
 ```
 
+## Constants
+Oftentimes, you want to define constants that are used inside a class. 
+
+Having multiple instances of the class share the same constant can be good sometiems and you can do it in several different ways: 
+
+#### Enum
+```c++
+class Bakery
+{
+private:
+    enum { Months = 12 };
+...
+```
+This does not create any new variable, but substitues every usage of `Months` with the value of `12`. 
+
+#### Static Const
+```c++
+class Bakery
+{
+private:
+    static const int Months = 12;
+..l.
+```
