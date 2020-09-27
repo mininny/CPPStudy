@@ -9,4 +9,6 @@ Mininny's journey through C++
 * [Loop](Loop.md)
 * [Conditionals](Conditionals.md)
 * [Functions](Functions.md)
+* [Class](Class.md)
 * [Others](Other.md)
+* [Study Notes](StudyNotes.md)
