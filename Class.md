@@ -110,6 +110,39 @@ Classname object = value;
 Stock tesla = "TSLA";
 ```
 
+### Member Initializer List
+If you have a `const` type member variable, you can not initialize the variable inside the constructor body because the variable is only `initializable` and not `assigned`.
+```c++
+class String
+{
+    const int boundary; // Declared here
+}
+
+String::String(Char * st, Int size) 
+{
+    boundary = size; // Error! Can not be assigned here.
+}
+```
+
+C++ provides special syntax called `Member initializer list` to further improve the constructor. 
+```c++
+String::String(Char * st, Int size): boundary(size) // Initializes `boundary` with `size`. 
+{
+    ...
+}
+```
+
+This technique is not reserved only for `const` variables, and can be used with any and all member variables of a class. 
+
+Usually, the initalizer in the member initializer list is executed before the constructor's body is executed. The variables are executed in the order they are declared in the class definition, not in the order they are listed in the initializer list. 
+```c++
+String::String(Char * st, Int size): leeway(size * 2) // You can also do basic calculation here. 
+{ ... }
+```
+
+> Member initializer list is only available to the constructor.
+
+
 ### Destructor
 If you create an instance using a constructor, then you must properly destroy that instance using a destructor. 
 
