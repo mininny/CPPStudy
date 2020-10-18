@@ -60,3 +60,18 @@ String & String::operator=(const String & st)
     ...
 }
 ```
+
+### Explicit Constructor
+```c++
+Class Student
+{
+    ...
+    explicit Student(std::string & s): ...
+}
+```
+
+The above expression is an explicit constructor. 
+
+Constructor that can be called with only one parameter may be implicitly casted. For example, the above expression allows automatic casting from `string` to `student` to happen. 
+
+To prevent this, you must declare the constructor `explicit` and prevent any implicit conversion within constructors.
