@@ -10,5 +10,7 @@ Mininny's journey through C++
 * [Conditionals](Conditionals.md)
 * [Functions](Functions.md)
 * [Class](Class.md)
+* [Class +](ClassAdvanced.md)
+* [Inheritance](Inheritance.md)
 * [Others](Other.md)
 * [Study Notes](StudyNotes.md)
