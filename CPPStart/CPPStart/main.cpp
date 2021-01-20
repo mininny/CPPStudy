@@ -15,12 +15,12 @@ void numberOfCarrots() {
     int carrots;
     double x;
     
-    cout << "당근 몇개가 있나요?" << endl;
+    cout << "How many carrots do you have?" << endl;
     cin >> carrots;
-    cout << "당근 " << carrots << "개를 흔들어 주세요!" << endl;
+    cout << "Shake" << carrots << "carrots!" << endl;
     
     x = pow(carrots, 2);
-    cout << "제곱은 " << x << "개" << endl;
+    cout << "The squared count of carrots is " << x << "." << endl;
 }
 
 void printRand() {
@@ -36,9 +36,9 @@ double farenheitFrom(double celcius) {
 void convertCelsiusToFarenheit() {
     double celcius;
     
-    cout << "섭씨 온도를 입력하세요: ";
+    cout << "Enter celsius-unit temperature: ";
     cin >> celcius;
-    cout << "화씨론: " << farenheitFrom(celcius) << endl;
+    cout << "As Fahrenheit-unit: " << farenheitFrom(celcius) << endl;
 }
 
 int main(int argc, const char * argv[]) {
