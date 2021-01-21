@@ -20,7 +20,10 @@ void numberOfCarrots() {
     cout << "ニンジンはいくつありますか。" << endl;
     cout << "¿cuantas zanahorias tienes?" << endl;
     cin >> carrots;
+    cout << "당근 " << carrots << "개를 흔들어 주세요!" << endl;
     cout << "Shake" << carrots << "carrots!" << endl;
+    cout << "ニンジン" << carrots << "を振ってください。" << endl;
+    cout << "¡agitar" << carrots << "zanahorias!" << endl;
     
     x = pow(carrots, 2);
     cout << "The squared count of carrots is " << x << "." << endl;
