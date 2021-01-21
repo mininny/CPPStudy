@@ -15,7 +15,10 @@ void numberOfCarrots() {
     int carrots;
     double x;
     
+    cout << "당근 몇 개가 있나요?" << endl;
     cout << "How many carrots do you have?" << endl;
+    cout << "ニンジンはいくつありますか。" << endl;
+    cout << "¿cuantas zanahorias tienes?" << endl;
     cin >> carrots;
     cout << "Shake" << carrots << "carrots!" << endl;
     
