@@ -42,7 +42,11 @@ double farenheitFrom(double celcius) {
 void convertCelsiusToFarenheit() {
     double celcius;
     
-    cout << "Enter celsius-unit temperature: ";
+    cout << "섭씨 온도를 입력하세요: " << endl;
+    cout << "Enter celsius-unit temperature: " << endl;
+    cout << "摂氏温度を入力してください: " << endl;
+    cout << "ingrese la temperatura en unidad celsius: " << endl;
+    cout << "Input: ";
     cin >> celcius;
     cout << "As Fahrenheit-unit: " << farenheitFrom(celcius) << endl;
 }
