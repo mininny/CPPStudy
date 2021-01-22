@@ -2,6 +2,8 @@
 
 Mininny's journey through C++
 
+> Based on C++11
+
 * [C++ Start](CPPStart)
 * [Primitives](Primitives.md)
 * [Compound Types](Compound%20Types.md)
